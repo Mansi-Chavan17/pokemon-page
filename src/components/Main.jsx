@@ -26,7 +26,7 @@ const Main=()=>{
       {selectedItem && (
         <div>
           <h2>{selectedItem.name}</h2>
-          <img src={selectedItem.image} alt={selectedItem.name}/>
+          <img src={selectedItem.imageUrl} alt={selectedItem.name}/>
           <p>Name: {selectedItem.name}</p>
           <p>Description: {selectedItem.description}</p>
         </div>
@@ -36,7 +36,7 @@ const Main=()=>{
       <div>
         {paginatedData.map((item)=>(
           <div key={item.name}>
-            <img src={item.image} alt={item.name}/>
+            <img src={item.imageUrl} alt={item.name}/>
             <h3>{item.name}</h3>{item.description}
           </div>
         ))}
